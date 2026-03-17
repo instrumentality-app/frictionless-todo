@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frictionless TODO Platform - Quick and simple task management">
+    <title>Frictionless TODO</title>
+    <style>
+        /* CSS will be added in a separate task */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header with app title -->
+        <header>
+            <h1>Frictionless TODO</h1>
+        </header>
+
+        <!-- Task input form -->
+        <form id="task-form" class="task-form">
+            <input
+                type="text"
+                id="task-input"
+                name="task"
+                placeholder="What needs to be done?"
+                aria-label="Enter a new task"
+                maxlength="500"
+                required
+            >
+            <button type="submit" aria-label="Add task">Add</button>
+        </form>
+
+        <!-- Task list container -->
+        <ul id="task-list" class="task-list" role="list">
+            <!-- Tasks will be dynamically inserted here -->
+        </ul>
+
+        <!-- Empty state container -->
+        <div id="empty-state" class="empty-state" hidden>
+            <p>No tasks yet. Add one above to get started!</p>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript will be added in a separate task
+    </script>
+</body>
+</html>
